@@ -1,0 +1,60 @@
+.contenedor{
+    justify-content: center;
+}
+
+.ticket-service{
+    border: 2px solid grey;
+    border-radius: 16px;
+    padding: 1rem 1rem;
+    margin: 0 2rem 3rem 2rem;
+}
+
+.ticket-service .titulo-post{
+    font-size: 3rem;
+}
+
+.ticket-service ul{
+    list-style: none;
+    margin-bottom: 1rem; 
+    margin-top: 1rem;  
+}
+
+.ticket-service ul li{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.ticket-service ul li i{
+    margin-right: 1rem;
+}
+
+.buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy button{
+    padding: 0.6rem ;
+    width: 70%;
+    background-color:#E1862D ;
+}
+
+.price{
+    color: grey;
+    text-decoration: line-through;
+    font-size: 1.5rem;
+}
+
+.ofert{
+    margin-left: 1rem;
+    color: #00bd00;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 48rem) {
+    .ticket-service{
+        margin: 1rem 0;
+    }
+}

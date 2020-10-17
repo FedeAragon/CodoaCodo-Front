@@ -1,0 +1,38 @@
+.articulo{
+    display: flex;
+    flex-direction: column;
+    .titulo-post,h2{
+        align-self: center;
+    }
+    img{
+        max-width: 40rem;
+    }
+}
+
+.box-row{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 1.6rem;
+    justify-content: space-around;
+    button{
+        align-self: center;
+        width: 100%;
+    }
+}
+
+.box-column{
+    display: flex;
+    flex-direction: column;
+    span{
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+    .price{
+        font-size: 4rem;
+    }
+}
+
+.checked{
+    color: orangered;
+}

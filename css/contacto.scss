@@ -1,0 +1,57 @@
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    input,
+    textarea { 
+        margin-bottom: 1.6rem;
+        font-size: 1.2rem;
+        padding: 0.3rem 0.4rem;
+        border: none;
+        border-bottom: 2px solid rgb(212, 212, 212);
+        color: grey;
+        transition: all 30ms;
+        &:focus{
+            outline: none;
+            border-bottom: 2px solid rgb(151, 138, 62);
+            padding: 0.5rem;
+        }
+    }
+    textarea{
+        border: 2px solid rgb(151, 138, 62);
+        resize: none;
+    }
+}
+
+.box-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caja-1,.caja-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.caja-nombre,.caja-telefono,.caja-email,.caja-asunto{
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem;
+}
+
+
+/*tablet*/
+@media screen and (min-width: 48rem) and (max-width: 64rem) {
+    .caja-1,.caja-2{
+        flex-direction: column;
+    }
+}
+
+/*movil*/
+@media screen and (max-width: 48rem){
+    .caja-1,.caja-2{
+        flex-direction: column;
+    }
+}

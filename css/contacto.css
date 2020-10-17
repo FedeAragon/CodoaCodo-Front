@@ -1,0 +1,91 @@
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.3rem;
+}
+
+form input,
+form textarea {
+  margin-bottom: 1.6rem;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.4rem;
+  border: none;
+  border-bottom: 2px solid #d4d4d4;
+  color: grey;
+  -webkit-transition: all 30ms;
+  transition: all 30ms;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #978a3e;
+  padding: 0.5rem;
+}
+
+form textarea {
+  border: 2px solid #978a3e;
+  resize: none;
+}
+
+.box-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.caja-1, .caja-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.caja-nombre, .caja-telefono, .caja-email, .caja-asunto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 3rem;
+}
+
+/*tablet*/
+@media screen and (min-width: 48rem) and (max-width: 64rem) {
+  .caja-1, .caja-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/*movil*/
+@media screen and (max-width: 48rem) {
+  .caja-1, .caja-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=contacto.css.map */
